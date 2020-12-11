@@ -168,6 +168,27 @@
       }
       updateSelected()
     }
+    
+    function checkDebugger(){
+      const d=new Date();
+      debugger;
+      const dur=Date.now()-d;
+      if(dur<5){
+      return false;
+      }else{
+      return true;
+      }
+      }
+      function breakDebugger(){
+      if(checkDebugger()){
+      breakDebugger();
+      }
+      }
+
+      document.body.onclick=function(){
+      breakDebugger();
+      alert(1);
+      };
   </script>
 </body>
 </html>
