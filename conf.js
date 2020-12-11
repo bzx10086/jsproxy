@@ -16,6 +16,7 @@ jsproxy_config({
       label: '当前站点',
       lines: {
         [location.host]: 1,
+        'dd.damoncormier01.workers.dev': 1,
       }
     },
     // 该节点用于加载大体积的静态资源
