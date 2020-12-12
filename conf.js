@@ -16,7 +16,7 @@ jsproxy_config({
       label: 'dd节点',
       lines: {
         // 主机:权重
-        'dd.damoncormier01.workers.dev/': 1,
+        'a.qilebi.tk': 1,
       }
     },
     'mysite': {
