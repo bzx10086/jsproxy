@@ -12,6 +12,13 @@ jsproxy_config({
 
   // 节点配置
   node_map: {
+    'demo-hk': {
+      label: 'dd节点',
+      lines: {
+        // 主机:权重
+        'dd.damoncormier01.workers.dev': 1,
+      }
+    },
     'mysite': {
       label: '当前站点',
       lines: {
